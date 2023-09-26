@@ -1,0 +1,44 @@
+server:
+  port : 8081
+
+spring:
+  application:
+    name: "bank-enterprise"
+  jackson:
+    default-property-inclusion: non_null
+    date-format: yyyy-MM-dd
+  h2:
+    console:
+      enabled: true
+      path: "/h2"
+      settings:
+        web-allow-others: true
+  profiles:
+    include: null
+  datasource:
+    url: jdbc:h2:mem:efectivo;DB_CLOSE_DELAY=-1;NON_KEYWORDS=USER
+    username: "sa"
+    password: "pass"
+    driverClassName: "org.h2.Driver"
+  jpa:
+    databasePlatform: "org.hibernate.dialect.H2Dialect"
+    properties:
+      format_sql: true
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+      format_sql: true
+    show-sql: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
+
+spring-doc:
+  swagger-ui:
+    path: /enterprise/swagger-ui.html
+    operationsSorter: method
+  api-docs:
+    path: /enterprise/api-docs

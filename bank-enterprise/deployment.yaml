@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: enterprise-project
+  labels:
+    app: enterprise-project
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: enterprise-project
+  template:
+    metadata:
+      labels:
+        app: enterprise-project
+    spec:
+      containers:
+        - name: enterprise
+          image: enterprise
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8081
+
+---
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: enterprise-service
+spec:
+  selector:
+    app: enterprise-project
+  ports:
+    - port: 8081 # Default port for image

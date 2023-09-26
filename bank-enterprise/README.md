@@ -19,11 +19,11 @@
 http://localhost:8081/enterprise/swagger-ui/index.html
 
 ## Para consumir los servicios con postman
-[Bank.postman_collection.json](bank-enterprise%2Fsrc%2Fmain%2Fresources%2FBank.postman_collection.json)
-![postman1.png](bank-enterprise%2Fsrc%2Fmain%2Fresources%2Fpostman1.png)
-![postman2.png](bank-enterprise%2Fsrc%2Fmain%2Fresources%2Fpostman2.png)
+[Bank.postman_collection.json](src%2Fmain%2Fresources%2FBank.postman_collection.json)
+![postman1.png](src%2Fmain%2Fresources%2Fpostman1.png)
+![postman2.png](src%2Fmain%2Fresources%2Fpostman2.png)
 ## Diagrama
-![Diagrama.png](bank-enterprise%2Fsrc%2Fmain%2Fresources%2FDiagrama.png)
+![Diagrama.png](src%2Fmain%2Fresources%2FDiagrama.png)
 
 ## Cobertura del código
-![Coverage.png](bank-enterprise%2Fsrc%2Fmain%2Fresources%2FCoverage.png)
+![Coverage.png](src%2Fmain%2Fresources%2FCoverage.png)

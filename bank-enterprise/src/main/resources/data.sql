@@ -1,0 +1,1 @@
+INSERT INTO ENTERPRISE VALUES(1000, '002345', 'Bank', 'Bank', true);
